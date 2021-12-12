@@ -1,0 +1,25 @@
+<div class="info-container shadows margin-20">
+    <div class="image-container">
+        <img class="avatar" src="/assets/avatar-2.png" alt="avatar">
+    </div>
+    <div class="details-container">
+        <div id="name">Saket Verma</div>
+        <!-- <div id="designation">Developer</div> -->
+        <div id="social-links-container">
+            <div class="social-account" *ngFor="let social of socialLinks">
+                <i [class]="'icon ' + 'fab fa-'+ social[0].trim()" (click)="openLink(social[1])"></i>
+            </div>
+        </div>
+        <div id="mails-container">
+            <div id="phone">
+                <i class="fas fa-phone-square-alt"></i>
+                <a href="tel:+918668692038">+91-8668692038</a>
+            </div>
+            <div *ngFor="let mail of mails" class="mail">
+                <i class="fas fa-envelope"></i>
+                <a [href]="'mailto:'+mail">{{mail}}</a>
+            </div>
+        </div>
+        <!-- <hr class="horizontal-line"> -->
+    </div>
+</div>

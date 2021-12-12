@@ -1,0 +1,149 @@
+.info-container {
+    width: calc(100vw - 20px)   ;
+    max-width: 1024px;
+    /* min-width: 100%; */
+    padding-top: 40px;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    /* background-image: url(https://image.freepik.com/free-vector/white-abstract-background-theme_23-2148830884.jpg); */
+    background-image: url(/assets/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px;
+    /* background: rgba(255,255,255,0.5); */
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.avatar {
+    width: 300px;
+}
+
+.bg-image {
+    width: 500px;
+    height: 500px;
+}
+
+.image-container, .details-container {
+    /* width: 50%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #3f5559;
+}
+
+
+.image-container {
+    justify-content: flex-end;
+}
+
+.details-container #name {
+    font-size: 4em;
+    color: #1c2942;
+    border-bottom: 1px solid #c7c7c7;
+    margin-bottom: 10px;
+}
+
+.details-container #designation {
+    font-size: 1.5rem;
+}
+
+#social-links-container {
+    display: flex;
+    font-size: 2rem;
+    width: 100%;
+    justify-content: center;
+    color: #3f5559;
+}
+
+
+.social-account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.icon {
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.social-account:hover .icon {
+    color: #506fa9;
+    transform: scale(1.3);
+}
+
+.horizontal-line {
+    margin: 10px 0;
+    height: 2px;
+    background-color: #3f5559;
+    width: 100%;
+}
+
+#social-links-container {
+    margin-top: 5px;
+}
+
+#mails-container {
+    margin-top: 20px;
+}
+
+.mail {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.mail:hover, #phone:hover {
+    color: #506fa9;
+    font-weight: 600;
+    letter-spacing:1px; 
+    transform: scale(1.2);
+}
+
+.fa-envelope, .fa-phone-square-alt {
+    font-size: 1.5rem;
+    margin-right: 0.75rem;
+}
+
+#phone {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.fa-phone-square-alt {
+    font-size: 1.75rem;
+}
+
+@media (max-width: 767px) {
+    .info-container {
+        flex-direction: column;
+        padding: 20px;
+        width: calc(100vw - 60px);
+    }
+
+    .details-container #name  {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .avatar {
+        width: calc(100% - 50px);
+        border-radius: 50%;
+    }
+}
