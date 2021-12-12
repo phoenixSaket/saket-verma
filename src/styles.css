@@ -13,7 +13,7 @@
 }
 
 body {
-    background-image: url(/assets/main-bg.png);
+    background-image: url('https://phoenixsaket.github.io/saket-verma/assets/main-bg.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -1,1 +1,3 @@
 Font-Awesome : https://www.npmjs.com/package/@fortawesome/angular-fontawesome
+
+ng build --prod --base-href "https://phoenixsaket.github.io/saket-verma/"
