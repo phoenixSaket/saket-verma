@@ -4,12 +4,16 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InfoComponent } from './info/info.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { AboutMeComponent } from './about-me/about-me.component';
 // import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
     AppComponent,
-    InfoComponent
+    InfoComponent,
+    ExperienceComponent,
+    AboutMeComponent
   ],
   imports: [
     BrowserModule,

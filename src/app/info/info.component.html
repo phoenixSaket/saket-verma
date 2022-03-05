@@ -1,10 +1,9 @@
-<div class="info-container shadows margin-20">
+<!-- <div class="info-container shadows margin-20">
     <div class="image-container">
-        <img class="avatar" src="assets/avatar-2.png" alt="avatar">
+        <img class="avatar" src="assets/saket.png" alt="avatar">
     </div>
     <div class="details-container">
         <div id="name">Saket Verma</div>
-        <!-- <div id="designation">Developer</div> -->
         <div id="social-links-container">
             <div class="social-account" *ngFor="let social of socialLinks">
                 <i [class]="'icon ' + 'fab fa-'+ social[0].trim()" (click)="openLink(social[1])"></i>
@@ -20,6 +19,20 @@
                 <a [href]="'mailto:'+mail">{{mail}}</a>
             </div>
         </div>
-        <!-- <hr class="horizontal-line"> -->
+    </div>
+</div> -->
+
+<div class="info-container margin-20">
+    <div class="left-info">
+        <div class="left-inner-container">
+            <div id="name">Saket Verma</div>
+            <div id="position">Developer</div>
+        </div>
+        <div id="explore">
+            Explore More >
+        </div>
+    </div>
+    <div class="right-info">
+        <img class="avatar shadows" src="assets/saket.png" alt="avatar">
     </div>
 </div>

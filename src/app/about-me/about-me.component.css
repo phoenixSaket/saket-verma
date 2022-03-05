@@ -1,0 +1,68 @@
+.about-me-container {
+    margin-top: -60px;
+    width: 75%;
+    max-width: 1440px;
+    background-color: #f2f2f2;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.about-me-inner {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    z-index: 2;
+
+}
+
+.para {
+    padding: 5px 0px;
+    text-align: justify;
+}
+
+.left-side {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    /* background-color: #122777; */
+    /* background-color: #e9fdff; */
+}
+
+.right-side {
+    width: 70%;
+}
+
+.signature-and-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.buttons-container {
+    display: flex;
+}
+.margin-right-20 {
+    margin-right: 20px;
+}
+
+.sign {
+    height: 70px;
+}
+
+.about-me-image {
+    width: 100%;
+}
+
+.avatar {
+    width: 100%;
+}
+
+.experience {
+    width: 250px;
+    height: 280px;
+}

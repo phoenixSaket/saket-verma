@@ -1,7 +1,7 @@
 * {
     font-family: 'Cabin', sans-serif;
     padding: 0;
-    margin : 0;
+    margin: 0;
 }
 
 .shadows, .shadow {
@@ -12,15 +12,74 @@
     margin: 20px;
 }
 
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-100 {
+    width: 100%;
+} 
+
+.d-flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+button {
+    height: 40px;
+    background-color: #122777;
+    color: white;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    border-radius: 3px;
+}
+
 body {
     background-image: url('https://phoenixsaket.github.io/saket-verma/assets/main-bg.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     height: 100vh;
 }
 
-a, a:visited, a:active, a:focus { 
+a, a:visited, a:active, a:focus {
     color: unset;
     text-decoration: none;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+*::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
