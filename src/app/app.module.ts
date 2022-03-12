@@ -7,6 +7,8 @@ import { InfoComponent } from './info/info.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { ProgressBarComponent } from './shared/progress-bar/progress-bar.component';
+import { TimelineComponent } from './shared/timeline/timeline.component';
 // import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
@@ -15,7 +17,9 @@ import { NavbarComponent } from './navbar/navbar.component';
     InfoComponent,
     ExperienceComponent,
     AboutMeComponent,
-    NavbarComponent
+    NavbarComponent,
+    ProgressBarComponent,
+    TimelineComponent
   ],
   imports: [
     BrowserModule,

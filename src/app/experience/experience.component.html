@@ -6,13 +6,37 @@
             </div>
         </div>
     </div>
-    <div class="tab-content d-flex" *ngIf="getCurrentTab()==='Intro'">
-        
+    <div class="tab-content d-flex" id="content-height" *ngIf="getCurrentTab()==='Intro'">
+        <div class="left d-flex flex-column justify-center align-center w-50">
+            <b>Hello there !</b><br>
+            I am a developer with mai focus on front-end technologies like Angular, React.<br>
+            I have personal intererts in Native app building, Adobe Photoshop, Adobe XD, Kustom Live Wallpaper
+            (KLWP).<br>
+            I alo have personal interest in Data Science terminologies like Artificial Intelligence, Big Data, etc.
+        </div>
+        <div class="right d-flex w-50">
+            <div class="d-flex w-100">
+                <div class="w-50 margin-l-r-5">
+                    <div class="w-100 padding-t-b-10" *ngFor="let skill of leftSkills">
+                        <app-progress-bar [name]="skill.skillName" [value]="skill.value" [maxvalue]="skill.maxValue">
+                        </app-progress-bar>
+                    </div>
+                </div>
+                <div class="w-50 margin-l-r-5">
+                    <div class="w-100 padding-t-b-10" *ngFor="let skill of rightSkills">
+                        <app-progress-bar [name]="skill.skillName" [value]="skill.value" [maxvalue]="skill.maxValue">
+                        </app-progress-bar>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="tab-content" *ngIf="getCurrentTab()==='Experience'">
-        
+    <div class="tab-content p-relative" [style.height]="contentHeight + 'px'" *ngIf="getCurrentTab()==='Experience'">
+        <div class="w-100 exper-conatiner d-flex align-center">
+            <app-timeline [experience]="experience"></app-timeline>
+        </div>
     </div>
-    <div class="tab-content" *ngIf="getCurrentTab()==='Education'">
-        
+    <div class="tab-content" [style.height]="contentHeight + 'px'" *ngIf="getCurrentTab()==='Education'">
+
     </div>
 </div>

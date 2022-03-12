@@ -1,7 +1,7 @@
 .experience-container {
     width: 60vw;
     padding: 30px;
-    height: 400px;
+    /* height: 400px; */
     margin-top: 40px;
     background-color: #f2f2f2;
 }
@@ -20,4 +20,24 @@
 
 .tab-header {
     cursor: pointer;
+}
+
+.tab-content {
+    height: 100%;
+}
+
+.padding-t-b-10 {
+    padding: 10px 0;
+}
+
+.margin-l-r-5 {
+    margin: 0 10px;
+}
+
+.exper-conatiner {
+    height: 100%;
+}
+
+.p-relative {
+    position: relative;
 }

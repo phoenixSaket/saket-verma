@@ -1,0 +1,10 @@
+<div class="progress-bar-container">
+    <div class="current" [style.left]="position + 'px'">
+        <span class="value" [style.left]="position + 'px'">{{value}}%</span>
+        <div class="vertical-line"></div>
+    </div>
+    <div class="name" [style.width]="width + 'px'">
+        {{name}}
+    </div>
+    <progress id="progress" class="progress-bar" [value]="value" [max]="maxValue"></progress>
+</div>
