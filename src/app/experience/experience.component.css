@@ -41,3 +41,7 @@
 .p-relative {
     position: relative;
 }
+
+.right {
+    padding-top: 30px;
+}
