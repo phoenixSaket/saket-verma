@@ -13,7 +13,7 @@ export class TimelineComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.experience.push({ company: this.experience[this.experience.length - 1].company, year: { start: new Date().getFullYear() }});
+    
   }
 
 }
