@@ -1,3 +1,18 @@
-<div class="experience-container">
-    Experience
+<div class="experience-container mini-shadow">
+    <div class="tabs-container">
+        <div *ngFor="let tab of tabs">
+            <div class="tab-header" (click)="setActiveTab(tab.tabName)" [ngClass]="tab.isActive ? 'active-tab' : ''">
+                {{tab.tabName}}
+            </div>
+        </div>
+    </div>
+    <div class="tab-content d-flex" *ngIf="getCurrentTab()==='Intro'">
+        
+    </div>
+    <div class="tab-content" *ngIf="getCurrentTab()==='Experience'">
+        
+    </div>
+    <div class="tab-content" *ngIf="getCurrentTab()==='Education'">
+        
+    </div>
 </div>

@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { InfoComponent } from './info/info.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { NavbarComponent } from './navbar/navbar.component';
 // import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
@@ -13,7 +14,8 @@ import { AboutMeComponent } from './about-me/about-me.component';
     AppComponent,
     InfoComponent,
     ExperienceComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
