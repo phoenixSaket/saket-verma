@@ -12,3 +12,8 @@
     justify-content: center;
     z-index: 1;
 }
+
+#experience {
+    width: 60%;
+    max-width: 960px;
+}

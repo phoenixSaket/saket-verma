@@ -1,5 +1,5 @@
 .experience-container {
-    width: 60vw;
+    max-width: 60vw;
     padding: 30px;
     /* height: 400px; */
     margin-top: 40px;
