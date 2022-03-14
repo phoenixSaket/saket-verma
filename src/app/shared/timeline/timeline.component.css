@@ -3,7 +3,6 @@
     width: 100%;
     height: 100%;
     justify-content: space-around;
-    /* margin-top: 100px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,14 +11,14 @@
 
 .container {
     position: relative;
-    top: 20px; 
+    top: 20px;
     display: flex;
     justify-content: space-between;
 }
 
 .company {
     position: relative;
-    top: 20px;
+    top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,7 +32,7 @@
     top: 3px;
     display: flex;
     justify-content: center;
-    font-size: 10px; 
+    font-size: 10px;
 }
 
 .year-end {
@@ -41,7 +40,7 @@
     top: 3px;
     display: flex;
     justify-content: center;
-    font-size: 10px; 
+    font-size: 10px;
 }
 
 
@@ -56,4 +55,28 @@
 .timeline {
     width: 100%;
     height: 7px;
+}
+
+.color-1 {
+    background-color: #368c7a;
+}
+
+.color-2 {
+    background-color: #EC93B3;
+}
+
+.color-3 {
+    background-color: #7B8AC1;
+}
+
+.text-color-1 {
+    color: #368c7a;
+}
+
+.text-color-2 {
+    color: #EC93B3;
+}
+
+.text-color-3 {
+    color: #7B8AC1;
 }

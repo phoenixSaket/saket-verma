@@ -4,6 +4,8 @@
     /* height: 400px; */
     margin-top: 40px;
     background-color: #f2f2f2;
+    background: transparent;
+    border-radius: 5px;
 }
 
 .tabs-container {
@@ -11,19 +13,29 @@
     background: transparent;
     width: 100%;
     justify-content: space-around;
+    border-bottom: 3px solid #c0e3e7;
 } 
 
 .active-tab {
-    text-decoration: underline;
     text-decoration-style: solid;
+    background-color: #c0e3e7;
+    border-radius: 5px 5px 0 0;
+    width: 100%; 
+    font-weight: bold;
 }
 
 .tab-header {
     cursor: pointer;
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
 }
 
 .tab-content {
     height: 100%;
+    width: 60vw;
+    max-width: calc(960px - 60px);
 }
 
 .padding-t-b-10 {

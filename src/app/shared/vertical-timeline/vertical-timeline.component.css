@@ -1,0 +1,65 @@
+.verticalLine {
+    width: 5px;
+    height: 95%;
+    background-color: var(--accent-color);
+    margin: 0px 10px;
+}
+
+.timeline {
+    max-width: 960px;
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left, .right {
+    width: calc(50% - 2.5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.left {
+    align-items: flex-end;
+    text-align: right;
+}
+
+.right {
+    align-items: flex-start;
+    text-align: left    ;
+}
+
+.blank {
+    height: 60px;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 13px;
+}
+
+.left .content {
+    align-items: flex-end;
+}
+
+.right .content {
+    align-items: flex-start;
+}
+
+.title {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.college {
+    font-size: 14px;
+}
+
+.city, .duration {
+    font-size: 12px;
+    color: #454545;
+}

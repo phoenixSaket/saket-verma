@@ -1,6 +1,6 @@
 <div class="experience-container mini-shadow">
     <div class="tabs-container">
-        <div *ngFor="let tab of tabs">
+        <div class="w-100" *ngFor="let tab of tabs">
             <div class="tab-header" (click)="setActiveTab(tab.tabName)" [ngClass]="tab.isActive ? 'active-tab' : ''">
                 {{tab.tabName}}
             </div>
@@ -37,6 +37,8 @@
         </div>
     </div>
     <div class="tab-content" [style.height]="contentHeight + 'px'" *ngIf="getCurrentTab()==='Education'">
-
+        <div class="w-100 exper-conatiner d-flex align-center">
+            <app-vertical-timeline [education]="education"></app-vertical-timeline>
+        </div>
     </div>
 </div>

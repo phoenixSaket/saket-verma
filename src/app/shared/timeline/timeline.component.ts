@@ -10,9 +10,9 @@ export class TimelineComponent implements OnInit {
   @Input() experience = [];
   timelineData: any = [];
   colors: any = [
-    "#03CEA4",
-    "#F29CA3",
-    "#8EA4D2",
+    "#368c7a",
+    "#be2b37",
+    "#30539c",
     "#604D53",
     "#FFD166",
   ];
@@ -75,20 +75,24 @@ export class TimelineComponent implements OnInit {
   private setData() {
     console.log(this.experience);
     this.timelineData = [];
-    let colorIndex = 0;
+    let colorIndex = 1;
 
     this.experience.forEach((comp) => {
       let dur = comp.period.duration;
       for (let i = 0; i < dur; i++) {
         if (i == 0) {
-          this.timelineData.push({ company: comp.company, color: this.colors[colorIndex], type: "start", text: '' + this.getMonth(comp.period.start.month) + ", " + comp.period.start.year + " - " + this.getMonth(comp.period.end.month) + ", " + (comp.period.end.year != 0 ? comp.period.end.year : new Date().getFullYear()) });
+          this.timelineData.push({ company: comp.company, color: 'color-'+colorIndex, type: "start", text: '' + this.getMonth(comp.period.start.month) + ", " + comp.period.start.year + " - " + this.getMonth(comp.period.end.month) + ", " + (comp.period.end.year != 0 ? comp.period.end.year : new Date().getFullYear()) });
         } else if (i == dur - 1) {
-          this.timelineData.push({ company: comp.company, color: this.colors[colorIndex], type: "end", text: '' + this.getMonth(comp.period.end.month) + ", " + (comp.period.end.year != 0 ? comp.period.end.year : new Date().getFullYear()) });
+          this.timelineData.push({ company: comp.company, color: 'color-'+colorIndex, type: "end", text: '' + this.getMonth(comp.period.end.month) + ", " + (comp.period.end.year != 0 ? comp.period.end.year : new Date().getFullYear()) });
         } else {
-          this.timelineData.push({ company: comp.company, color: this.colors[colorIndex], type: "between" });
+          this.timelineData.push({ company: comp.company, color: 'color-'+colorIndex, type: "between" });
         }
       }
-      colorIndex += 1;
+      if(colorIndex < 3) {
+        colorIndex += 1;
+      } else {
+        colorIndex = 1;
+      }
     })
 
     console.log(this.timelineData)

@@ -25,9 +25,16 @@ export class ExperienceComponent implements OnInit {
   ];
 
   public experience = [
-    { company: "PlexusMD", period: {start: {month: 1, year: 2020}, end: {month: 6, year: 2020} }},
-    { company: "ScrollRight", period: {start: {month: 7, year: 2020}, end: {month: 9, year: 2020} }},
-    { company: "CitiusTech", period: {start: {month: 10, year: 2020}, end: {month: 0, year: 0} }}
+    { company: "PlexusMD", period: { start: { month: 1, year: 2020 }, end: { month: 6, year: 2020 } } },
+    { company: "ScrollRight", period: { start: { month: 7, year: 2020 }, end: { month: 9, year: 2020 } } },
+    { company: "CitiusTech", period: { start: { month: 10, year: 2020 }, end: { month: 0, year: 0 } } }
+  ]
+
+  public education = [
+    { course: "MCA", period: { start: 2017, end: 2020 }, college: "Veermata Jijabai Technological Institue (VJTI)", city: "Mumbai" },
+    { course: "BCA", period: { start: 2014, end: 2017 }, college: "G. H. Raisoni Institute for I.T.", city: "Nagpur" },
+    { course: "HSC", period: { start: null, end: 2014 }, college: "Ushabai Deshmukh Jr. College", city: "Achalpur" },
+    { course: "SSC", period: { start: null, end: 2012 }, college: "Fatima Convent High School", city: "Achalpur" },
   ]
 
   leftSkills = [];

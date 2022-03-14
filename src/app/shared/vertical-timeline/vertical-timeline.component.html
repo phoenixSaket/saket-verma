@@ -1,0 +1,26 @@
+<div class="timeline w-100 h-100 d-flex">
+    <div class="w-50 left">
+        <div class="" *ngFor="let item of left">
+            <div class="content" *ngIf="item.type != 'blank'">
+                <div class="title">{{item.course}}</div>
+                <div class="college">{{item.college}}</div>
+                <div class="city">{{item.city}}</div>
+                <div class="duration">{{item.period.start}} {{item.period.start != null ? '-' : ''}} {{item.period.end}}</div>
+            </div>
+            <div class="blank" *ngIf="item.type == 'blank'">{{item.course}}</div>
+        </div>
+    </div>
+    <div class="verticalLine"></div>
+    <div class="w-50 right">
+        <div class="" *ngFor="let item of right">
+            <div class="content" *ngIf="item.type != 'blank'">
+                <div class="title">{{item.course}}</div>
+                <div class="college">{{item.college}}</div>
+                <div class="city">{{item.city}}</div>
+                <div class="duration">{{item.period.start}} {{item.period.start != null ? '-' : ''}} {{item.period.end}}
+                </div>
+            </div>
+            <div class="blank" *ngIf="item.type == 'blank'">{{item.course}}</div>
+        </div>
+    </div>
+</div>
