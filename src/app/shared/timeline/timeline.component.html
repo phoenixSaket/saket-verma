@@ -1,9 +1,15 @@
 <div class="timeline-container">
-    <div class="company-container">
-        <div class="company" *ngFor="let company of experience">{{company.company}}</div>
+    <div class="container">
+        <div *ngFor="let time of this.timelineData" [ngClass]="time.type=='start' ? 'company-start': ''">
+            <div class="company" *ngIf="time.type=='start'" [style.width]="separateData[time.company].width + 'px'"
+                [style.color]="time.color">
+                <div>{{time.company}}</div>
+                <div class="year">{{time.text}}</div>
+            </div>
+        </div>
     </div>
-    <div class="line"></div>
-    <div class="year-container">
-        <div class="year" *ngFor="let year of experience">{{year.year.start}}</div>
+
+    <div class="timeline-main">
+        <div class="timeline" *ngFor="let time of this.timelineData" [style.backgroundColor]="time.color"></div>
     </div>
 </div>

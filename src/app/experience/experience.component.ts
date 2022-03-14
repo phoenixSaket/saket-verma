@@ -25,9 +25,9 @@ export class ExperienceComponent implements OnInit {
   ];
 
   public experience = [
-    { company: "PlexusMD", year: {start: 2020, end: 2020} },
-    { company: "ScrollRight", year: {start: 2020, end: 2020} },
-    { company: "CitiusTech", year: {start: 2020, end: null} },
+    { company: "PlexusMD", period: {start: {month: 1, year: 2020}, end: {month: 6, year: 2020} }},
+    { company: "ScrollRight", period: {start: {month: 7, year: 2020}, end: {month: 9, year: 2020} }},
+    { company: "CitiusTech", period: {start: {month: 10, year: 2020}, end: {month: 0, year: 0} }}
   ]
 
   leftSkills = [];
