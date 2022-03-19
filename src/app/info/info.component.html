@@ -25,14 +25,14 @@
 <div class="info-container margin-20">
     <div class="left-info">
         <div class="left-inner-container">
-            <div id="name">Saket Verma</div>
-            <div id="position">Developer</div>
+            <div id="name">{{info.name}}</div>
+            <div id="position">{{info.jobProfile}}</div>
         </div>
         <div id="explore">
             Explore More >
         </div>
     </div>
     <div class="right-info">
-        <img class="avatar shadows" src="assets/saket.png" alt="avatar">
+        <img class="avatar shadows" [src]="'assets/' + info.image" alt="avatar">
     </div>
 </div>

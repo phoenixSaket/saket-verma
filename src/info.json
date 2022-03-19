@@ -1,0 +1,137 @@
+{
+    "name": "Saket Verma",
+    "jobProfile": "Developer",
+    "image": "saket.png",
+    "experienceImage": "2years.png",
+    "aboutText": "<b>Hello !</b><br><br> I am a web developer focused on crafting great web experiences. Designing and Coding have been my passion since the days I started working with computers.I enjoy creating beautifully designed, intuitive and functional websites, softwares, live wallpapers.<br> Besides this, I also have passion for gaming and mobile photography.",
+    "introText": "<b>Hello there !</b><br><br>I am a developer with main focus on front-end technologies like Angular, React.<br>I have personal intererts in Native app building, Adobe Photoshop, Adobe XD, Kustom Live Wallpaper (KLWP).<br>I alo have personal interest in Data Science terminologies like Artificial Intelligence, Big Data, etc.",
+    "skills": [
+        {
+            "name": "Angular",
+            "percent": 75,
+            "max": 100
+        },
+        {
+            "name": "React",
+            "percent": 60,
+            "max": 100
+        },
+        {
+            "name": "Java",
+            "percent": 65,
+            "max": 100
+        },
+        {
+            "name": "NodeJS",
+            "percent": 70,
+            "max": 100
+        },
+        {
+            "name": "SQLite",
+            "percent": 65,
+            "max": 100
+        },
+        {
+            "name": "MySQL",
+            "percent": 65,
+            "max": 100
+        },
+        {
+            "name": "HTML",
+            "percent": 85,
+            "max": 100
+        },
+        {
+            "name": "CSS",
+            "percent": 85,
+            "max": 100
+        }
+    ],
+    "experience": [
+        {
+            "company": "PlexusMD",
+            "period": {
+                "start": {
+                    "month": 1,
+                    "year": 2020
+                },
+                "end": {
+                    "month": 6,
+                    "year": 2020
+                }
+            }
+        },
+        {
+            "company": "ScrollRight",
+            "period": {
+                "start": {
+                    "month": 7,
+                    "year": 2020
+                },
+                "end": {
+                    "month": 9,
+                    "year": 2020
+                }
+            }
+        },
+        {
+            "company": "CitiusTech",
+            "period": {
+                "start": {
+                    "month": 10,
+                    "year": 2020
+                },
+                "end": {
+                    "month": 0,
+                    "year": 0
+                }
+            }
+        }
+    ],
+    "education": [
+        {
+            "course": "MCA",
+            "period": {
+                "start": 2017,
+                "end": 2020
+            },
+            "college": "Veermata Jijabai Technological Institue (VJTI)",
+            "city": "Mumbai"
+        },
+        {
+            "course": "BCA",
+            "period": {
+                "start": 2014,
+                "end": 2017
+            },
+            "college": "G. H. Raisoni Institute for I.T.",
+            "city": "Nagpur"
+        },
+        {
+            "course": "HSC",
+            "period": {
+                "start": null,
+                "end": 2014
+            },
+            "college": "Ushabai Deshmukh Jr. College",
+            "city": "Achalpur"
+        },
+        {
+            "course": "SSC",
+            "period": {
+                "start": null,
+                "end": 2012
+            },
+            "college": "Fatima Convent High School",
+            "city": "Achalpur"
+        }
+    ],
+    "socialLinks": {
+        "facebook": "https://www.facebook.com/iamsaket.verma",
+        "instagram": "https://www.instagram.com/saket.verma/",
+        "reddit": "https://www.reddit.com/user/phoenix_saket",
+        "twitter": "https://twitter.com/phoenix_saket",
+        "github": "https://github.com/phoenixSaket",
+        "linkedin": "https://www.linkedin.com/in/developer-saket-verma"
+    }
+}

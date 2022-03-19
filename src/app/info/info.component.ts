@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-info',
@@ -7,12 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InfoComponent implements OnInit {
 
+  @Input() info = {
+    name: "",
+    jobProfile: "",
+    image: ""
+  };
   public socialLinks = [];
   public mails = [];
 
   constructor() { }
 
   ngOnInit(): void {
+
+    console.log("Info", this.info)
 
     let socialLinks = {
       facebook: "https://www.facebook.com/iamsaket.verma",

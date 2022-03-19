@@ -3,23 +3,11 @@
     <div class="about-me-container mini-shadow">
         <div class="about-me-inner">
             <div class="left-side">
-                <img class="experience" src="assets/2years.png" alt="">
+                <img class="experience" [src]="'assets/'+info.experienceImage" alt="">
             </div>
             <div class="right-side">
                 <div class="about-me-content">
-                    <div class="para bold">
-                        Hello !
-                    </div>
-                    <div class="para">
-                        I am a web developer focused on crafting great web experiences. Designing and Coding have been
-                        my
-                        passion since the days I started working with computers.I enjoy creating beautifully designed,
-                        intuitive
-                        and functional websites, softwares, live wallpapers.
-                    </div>
-                    <div class="para">
-                        Besides this, I also have passion for gaming and mobile photography.
-                    </div>
+                    <div class="para" [innerHTML]="info.aboutText"></div>
                 </div>
                 <div class="signature-and-buttons">
                     <div class="signature">

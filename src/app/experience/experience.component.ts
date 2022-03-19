@@ -13,16 +13,59 @@ export class ExperienceComponent implements OnInit {
     { tabName: "Education", isActive: false }
   ];
 
+  // public skills = [
+  //   { skillName: "Angular", value: 75, max: 100 },
+  //   { skillName: "React", value: 70, max: 100 },
+  //   { skillName: "Java", value: 70, max: 100 },
+  //   { skillName: "NodeJS", value: 70, max: 100 },
+  //   { skillName: "SQLite", value: 70, max: 100 },
+  //   { skillName: "MySQL", value: 75, max: 100 },
+  //   { skillName: "HTML", value: 80, max: 100 },
+  //   { skillName: "CSS", value: 85, max: 100 },
+  // ];
+
   public skills = [
-    { skillName: "Angular", value: 75, max: 100 },
-    { skillName: "React", value: 70, max: 100 },
-    { skillName: "Java", value: 70, max: 100 },
-    { skillName: "NodeJS", value: 70, max: 100 },
-    { skillName: "SQLite", value: 70, max: 100 },
-    { skillName: "MySQL", value: 75, max: 100 },
-    { skillName: "HTML", value: 80, max: 100 },
-    { skillName: "CSS", value: 85, max: 100 },
-  ];
+    {
+      skillName: "Angular",
+      value: 75,
+      max: 100
+    },
+    {
+      skillName: "React",
+      value: 60,
+      max: 100
+    },
+    {
+      skillName: "Java",
+      value: 65,
+      max: 100
+    },
+    {
+      skillName: "NodeJS",
+      value: 70,
+      max: 100
+    },
+    {
+      skillName: "SQLite",
+      value: 65,
+      max: 100
+    },
+    {
+      skillName: "MySQL",
+      value: 65,
+      max: 100
+    },
+    {
+      skillName: "HTML",
+      value: 85,
+      max: 100
+    },
+    {
+      skillName: "CSS",
+      value: 85,
+      max: 100
+    }
+  ]
 
   public experience = [
     { company: "PlexusMD", period: { start: { month: 1, year: 2020 }, end: { month: 6, year: 2020 } } },
