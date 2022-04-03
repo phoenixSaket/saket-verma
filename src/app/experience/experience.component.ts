@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ExperienceComponent implements OnInit {
 
   public tabs = [
-    { tabName: "Intro", isActive: false },
+    { tabName: "Skills", isActive: false },
     { tabName: "Experience", isActive: false },
     { tabName: "Education", isActive: false }
   ];
@@ -89,7 +89,7 @@ export class ExperienceComponent implements OnInit {
 
   ngOnInit(): void {
     this.tabs.forEach(tab => {
-      if (tab.tabName === "Intro") {
+      if (tab.tabName === "Skills") {
         tab.isActive = true;
       }
     })
@@ -122,7 +122,7 @@ export class ExperienceComponent implements OnInit {
   }
 
   public getCurrentTab(): string {
-    let active = "Intro";
+    let active = "Skills";
     this.tabs.forEach(tab => {
       if (tab.isActive) {
         active = tab.tabName;

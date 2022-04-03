@@ -27,16 +27,28 @@ export class TimelineComponent implements OnInit {
 
     setTimeout(() => {
       let x = Array.from(document.getElementsByClassName("container") as HTMLCollectionOf<HTMLElement>);
-      console.log("Container", x);
+      let company = Array.from(document.getElementsByClassName("company") as HTMLCollectionOf<HTMLElement>);
+      let year = Array.from(document.getElementsByClassName("year") as HTMLCollectionOf<HTMLElement>);
+
       x.forEach(el => {
-        console.log("Container Children", el.children);
         Array.from(el.children).forEach((child) => {
           if (!child.classList.contains("company-start")) {
             child.remove();
           }
         })
       })
-    }, 100)
+
+      let top = 40;
+      company.forEach((el, index) => {
+        if(index % 2 != 0) {
+          top += 25;
+        } else {
+          top = 40;
+        }
+        el.style.top = top + "px";
+      })
+
+    }, 100);
   }
 
   private getDuration() {
@@ -73,7 +85,6 @@ export class TimelineComponent implements OnInit {
   }
 
   private setData() {
-    console.log(this.experience);
     this.timelineData = [];
     let colorIndex = 1;
 
@@ -81,21 +92,19 @@ export class TimelineComponent implements OnInit {
       let dur = comp.period.duration;
       for (let i = 0; i < dur; i++) {
         if (i == 0) {
-          this.timelineData.push({ company: comp.company, color: 'color-'+colorIndex, type: "start", text: '' + this.getMonth(comp.period.start.month) + ", " + comp.period.start.year + " - " + this.getMonth(comp.period.end.month) + ", " + (comp.period.end.year != 0 ? comp.period.end.year : new Date().getFullYear()) });
+          this.timelineData.push({ company: comp.company, color: 'color-' + colorIndex, type: "start", text: '' + this.getMonth(comp.period.start.month) + ", " + comp.period.start.year + " - " + this.getMonth(comp.period.end.month) + ", " + (comp.period.end.year != 0 ? comp.period.end.year : new Date().getFullYear()) });
         } else if (i == dur - 1) {
-          this.timelineData.push({ company: comp.company, color: 'color-'+colorIndex, type: "end", text: '' + this.getMonth(comp.period.end.month) + ", " + (comp.period.end.year != 0 ? comp.period.end.year : new Date().getFullYear()) });
+          this.timelineData.push({ company: comp.company, color: 'color-' + colorIndex, type: "end", text: '' + this.getMonth(comp.period.end.month) + ", " + (comp.period.end.year != 0 ? comp.period.end.year : new Date().getFullYear()) });
         } else {
-          this.timelineData.push({ company: comp.company, color: 'color-'+colorIndex, type: "between" });
+          this.timelineData.push({ company: comp.company, color: 'color-' + colorIndex, type: "between" });
         }
       }
-      if(colorIndex < 3) {
+      if (colorIndex < 3) {
         colorIndex += 1;
       } else {
         colorIndex = 1;
       }
     })
-
-    console.log(this.timelineData)
   }
 
   private getMonth(month: number) {
@@ -132,18 +141,14 @@ export class TimelineComponent implements OnInit {
     let totalDuration: number = 0;
 
     durations.forEach(dur => {
-      console.log(dur);
       totalDuration += parseInt(dur);
     })
 
     companies.forEach((comp, index) => {
-
-      console.log(comp);
       dataSplit[comp] = { ...dataSplit[comp], width: ((parseInt(durations[index]) / totalDuration) * timelineWidth), index: index };
     })
 
     this.separateData = dataSplit;
-    console.log(this.separateData)
   }
 
 }

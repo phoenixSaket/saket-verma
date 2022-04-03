@@ -1,7 +1,7 @@
 <div class="timeline-container">
     <div class="container">
-        <div *ngFor="let time of this.timelineData" [ngClass]="time.type=='start' ? 'company-start': ''">
-            <div class="company" *ngIf="time.type=='start'" [style.width]="separateData[time.company].width + 'px'"
+        <div class="timeline-block" *ngFor="let time of this.timelineData" [ngClass]="time.type=='start' ? 'company-start': ''">
+            <div class="company" *ngIf="time.type=='start'" width="separateData[time.company].width" [style.width]="separateData[time.company].width + 'px'"
                 [ngClass]="'text-'+time.color">
                 <div>{{time.company}}</div>
                 <div class="year">{{time.text}}</div>
