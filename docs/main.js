@@ -31,7 +31,7 @@ class ExperienceComponent {
     }
 }
 ExperienceComponent.ɵfac = function ExperienceComponent_Factory(t) { return new (t || ExperienceComponent)(); };
-ExperienceComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ExperienceComponent, selectors: [["app-experience"]], decls: 7, vars: 0, consts: [[1, "experience-container", "container"], [1, "image-container"], ["src", "/assets/Experience.png", "alt", "Experience", 1, "experience"], [1, "content-container"], [1, "title"], [1, "company-info"]], template: function ExperienceComponent_Template(rf, ctx) { if (rf & 1) {
+ExperienceComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ExperienceComponent, selectors: [["app-experience"]], decls: 7, vars: 0, consts: [[1, "experience-container", "container"], [1, "image-container"], ["src", "https://raw.githubusercontent.com/phoenixSaket/saket-verma/gh-pages-2/src/assets/Experience.png", "alt", "Experience", 1, "experience"], [1, "content-container"], [1, "title"], [1, "company-info"]], template: function ExperienceComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "img", 2);
@@ -114,7 +114,7 @@ class AboutMeComponent {
     }
 }
 AboutMeComponent.ɵfac = function AboutMeComponent_Factory(t) { return new (t || AboutMeComponent)(); };
-AboutMeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AboutMeComponent, selectors: [["app-about-me"]], decls: 16, vars: 0, consts: [[1, "about-me-container", "container"], [1, "content-container"], [1, "title"], [1, "content"], [1, "hello"], [1, "double-break"], [1, "image-container"], ["alt", "standing man", "src", "/assets/standing-man-1.png", 1, "standing-man"]], template: function AboutMeComponent_Template(rf, ctx) { if (rf & 1) {
+AboutMeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AboutMeComponent, selectors: [["app-about-me"]], decls: 16, vars: 0, consts: [[1, "about-me-container", "container"], [1, "content-container"], [1, "title"], [1, "content"], [1, "hello"], [1, "double-break"], [1, "image-container"], ["alt", "standing man", "src", "https://raw.githubusercontent.com/phoenixSaket/saket-verma/gh-pages-2/src/assets/standing-man-1.png", 1, "standing-man"]], template: function AboutMeComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
