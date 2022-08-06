@@ -4,7 +4,7 @@
     "image": "saket.png",
     "experienceImage": "2years.png",
     "aboutText": "<b>Hello !</b><br><br> I am a web developer focused on crafting great web experiences. Designing and Coding have been my passion since the days I started working with computers.I enjoy creating beautifully designed, intuitive and functional websites, softwares, live wallpapers.<br> Besides this, I also have passion for gaming and mobile photography.",
-    "introText": "<b>Hello there !</b><br><br>I am a developer with main focus on front-end technologies like Angular, React.<br>I have personal intererts in Native app building, Adobe Photoshop, Adobe XD, Kustom Live Wallpaper (KLWP).<br>I alo have personal interest in Data Science terminologies like Artificial Intelligence, Big Data, etc.",
+    "introText": "<b>Hello there !</b><br><br>I am a developer with main focus on front-end technologies like Angular, React.<br>I have personal interests in Native app building, Adobe Photoshop, Adobe XD, Kustom Live Wallpaper (KLWP).<br>I alo have personal interest in Data Science terminologies like Artificial Intelligence, Big Data, etc.",
     "skills": [
         {
             "name": "Angular",

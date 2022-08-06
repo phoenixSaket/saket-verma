@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-about-me',
@@ -7,16 +7,9 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class AboutMeComponent implements OnInit {
 
-  @Input() info = {
-    experienceImage: "",
-    aboutText: ""
-  };
-
-  constructor() {
-
-  }
+  constructor() { }
 
   ngOnInit(): void {
-    console.log("About Me", this.info);
   }
+
 }

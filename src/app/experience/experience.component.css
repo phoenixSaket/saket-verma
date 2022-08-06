@@ -1,59 +1,28 @@
 .experience-container {
-    max-width: 60vw;
-    padding: 30px;
-    /* height: 400px; */
-    margin-top: 40px;
-    background-color: #f2f2f2;
-    background: transparent;
-    border-radius: 5px;
-}
-
-.tabs-container {
+    background-color: #ffbdd687;
     display: flex;
-    background: transparent;
-    width: 100%;
-    justify-content: space-around;
-    border-bottom: 3px solid #c0e3e7;
-} 
-
-.active-tab {
-    text-decoration-style: solid;
-    background-color: #c0e3e7;
-    border-radius: 5px 5px 0 0;
-    width: 100%; 
-    font-weight: bold;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.tab-header {
-    cursor: pointer;
+.experience {
     width: 100%;
-    padding: 10px 0;
+    aspect-ratio: 1;
+}
+
+.image-container {
+    width: 50%;
+    min-width: 300px;
     display: flex;
     justify-content: center;
 }
 
-.tab-content {
-    height: 100%;
-    width: 60vw;
-    max-width: calc(960px - 60px);
+.content-container {
+    width: 50%;
+
 }
 
-.padding-t-b-10 {
-    padding: 10px 0;
-}
-
-.margin-l-r-5 {
-    margin: 0 10px;
-}
-
-.exper-conatiner {
-    height: 100%;
-}
-
-.p-relative {
-    position: relative;
-}
-
-.right {
-    padding-top: 30px;
+.title {
+    display: flex;
+    justify-content: flex-end;
 }
