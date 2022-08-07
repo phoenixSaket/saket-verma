@@ -495,13 +495,13 @@
       </svg>
     </div>
     <div class="info">
-      <div class="name">SAKET VERMA</div>
-      <div class="role">Developer</div>
+      <div class="name">{{info.name | uppercase}}</div>
+      <div class="role">{{info.jobProfile}}</div>
       <div class="email">
-        <a href="mailto: develope.saket@gmail.com">develope.saket@gmail.com</a>
+        <a [href]="'mailto: ' + info.email">{{info.email}}</a>
       </div>
       <div class="phone">
-        <a href="tel:+918668692038">+91-8668692038</a>
+        <a [href]="'tel:' + info.phone">{{info.phone}}</a>
       </div>
       <div class="button-container">
         <button class="primary-btn">Download CV</button>

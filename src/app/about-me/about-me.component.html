@@ -1,21 +1,7 @@
 <div class="about-me-container container">
     <div class="content-container">
         <div class="title">About Me</div>
-        <div class="content">
-            <div class="hello">Hello !</div>
-            <div class="double-break">
-                I am a web developer focused on crafting great web experiences. Designing and Coding have been my
-                passion since the days I started working with computers.I enjoy creating beautifully designed, intuitive
-                and functional websites, softwares, live wallpapers.
-            </div>
-            <div class="double-break">
-                Besides this, I also have passion for gaming and mobile photography.
-            </div>
-            <div class="double-break">
-                I am currently working as a Software Engineer on technologies like Angular, Ionic, Capacitor.I have
-                personal interests in Adobe Photoshop, Adobe XD, Kustom Live Wallpaper (KLWP).I also have personal
-                interest in Data Science terminologies like Artificial Intelligence, Big Data, etc.
-            </div>
+        <div class="content" [innerHTML]="content">
         </div>
     </div>
     <div class="image-container">

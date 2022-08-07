@@ -29,3 +29,17 @@
 .double-break {
     margin-bottom: 15px;
 }
+
+@media (min-width:0) and (max-width: 768px) {
+    .image-container {
+        display: none;
+    }
+
+    .about-me-container {
+        background-image: url("https://raw.githubusercontent.com/phoenixSaket/saket-verma/gh-pages-2/src/assets/standing-man-1.png");
+        background-size: contain;
+        background-position-x: 100%;
+        background-position-y: 100%;
+        background-repeat: no-repeat;
+    }
+}

@@ -1707,7 +1707,8 @@
 </svg>
 
 <div class="main-container">
-  <app-info></app-info>
-  <app-about-me></app-about-me>
-  <app-experience></app-experience>
+  <app-info [info]="personalInfo"></app-info>
+  <app-about-me [content]="aboutMeInfo"></app-about-me>
+  <app-experience [experience]="experience"></app-experience>
+  <app-education [education] = "education"></app-education>
 </div>
