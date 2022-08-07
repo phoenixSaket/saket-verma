@@ -1,10 +1,26 @@
 <div class="education-container container">
-    <div class="image-container">
-
-    </div>
     <div class="content">
         <div class="title">
             Education
         </div>
+        <div class="education-info">
+            <div class="institute" *ngFor="let ins of education">
+                <!-- {{ins | json}} -->
+                <div class="line-vertical"></div>
+                <div class="course">{{ins.course}}</div>
+                <div class="details">
+                    <div class="course-name">{{ins.courseFull}}</div>
+                    <div class="course-college">{{ins.college}}</div>
+                    <div class="course-city">{{ins.city}}</div>
+                    <div class="course-period">{{ins.period.start}} {{ins.period.start != null ? "-" : ""}}
+                        {{ins.period.end}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="image-container">
+        <img class="education"
+            src="https://raw.githubusercontent.com/phoenixSaket/saket-verma/gh-pages-2/src/assets/education.png"
+            alt="Education">
     </div>
 </div>

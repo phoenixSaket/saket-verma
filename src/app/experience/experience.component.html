@@ -15,10 +15,10 @@
                     <div class="company">{{exp.company}}</div>
                     <div class="role">{{exp.role}}</div>
                     <div class="period">
-                        <div class="start">{{getMonth(exp.period.start.month)}}, {{exp.period.start.year}}</div>
+                        <div class="start">{{getMonth(exp.period.start.month)}}, {{(exp.period.start.year).toString().substring(0, 2)}}</div>
                         &nbsp;-&nbsp;
                         <div class="end">{{getMonth(exp.period.end.month)}}{{exp.period.end.year != 0 ? ", " +
-                            exp.period.end.year : ""}}</div>
+                            exp.period.end.year.toString().substring(0, 2) : ""}}</div>
                     </div>
                     <div class="duration" [innerHTML]="getDuration(exp.period.start, exp.period.end)"></div>
                 </div>

@@ -108,24 +108,27 @@
     "education": [
         {
             "course": "MCA",
+            "courseFull": "Masters of Computer Applications",
             "period": {
                 "start": 2017,
                 "end": 2020
             },
-            "college": "Veermata Jijabai Technological Institue (VJTI)",
+            "college": "Veermata Jijabai Technological Institute (VJTI)",
             "city": "Mumbai"
         },
         {
             "course": "BCA",
+            "courseFull": "Bachelors of Computers Applications",
             "period": {
                 "start": 2014,
                 "end": 2017
             },
-            "college": "G. H. Raisoni Institute for I.T.",
+            "college": "G. H. Raisoni Institute for Information Technology",
             "city": "Nagpur"
         },
         {
             "course": "HSC",
+            "courseFull": "Higher School Certificate",
             "period": {
                 "start": null,
                 "end": 2014
@@ -135,6 +138,7 @@
         },
         {
             "course": "SSC",
+            "courseFull": "Secondory School Certificate",
             "period": {
                 "start": null,
                 "end": 2012

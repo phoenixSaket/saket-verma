@@ -1,3 +1,103 @@
 .education-container {
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.education {
+    width: 100%;
+}
+
+.content {
+    width: 70%;
+    line-height: unset;
+    margin-top: 0;
+}
+
+.image-container {
+    width: 30%;
+}
+
+.education-info {
+    margin-top: 30px;
+}
+
+.institute {
+    display: flex;
+    align-items: center;
+    /* padding: 10px 0; */
+}
+
+.course {
+    width: 3em;
+    height: 3em;
+    color: white;
+    background-color: #606060;
+    font-size: 0.75em;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    z-index: 2;
+}
+
+.course-name {
+    font-weight: 700;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.course-college,
+.course-period,
+.course-city {
+    font-weight: 600;
+}
+
+.course-period,
+.course-city {
+    color: #404040;
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+.line-vertical {
+    width: 2px;
+    height: 100px;
+    background-color: #606060;
+    position: relative;
+    left: calc(1em + 4px);
+    z-index: 1;
+}
+
+@media (min-width: 0) and (max-width: 768px) {
+    .image-container {
+        display: none;
+    }
+
+    .education-container {
+        background-image: url("https://raw.githubusercontent.com/phoenixSaket/saket-verma/gh-pages-2/src/assets/education.png");
+        background-size: 50%;
+        background-position-x: 100%;
+        background-position-y: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .line-vertical {
+        display: none;
+    }
+
+    .course-college,
+    .course-period,
+    .course-city {
+        margin-left: 20px;
+    }
+
+    .institute {
+        margin-bottom: 10px;
+    }
+
+    .content {
+        width: 100%;
+    }
 }
