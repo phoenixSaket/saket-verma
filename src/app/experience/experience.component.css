@@ -1,59 +1,188 @@
 .experience-container {
-    max-width: 60vw;
-    padding: 30px;
-    /* height: 400px; */
-    margin-top: 40px;
-    background-color: #f2f2f2;
-    background: transparent;
-    border-radius: 5px;
-}
-
-.tabs-container {
+    background-color: #ffbdd687;
     display: flex;
-    background: transparent;
-    width: 100%;
-    justify-content: space-around;
-    border-bottom: 3px solid #c0e3e7;
-} 
-
-.active-tab {
-    text-decoration-style: solid;
-    background-color: #c0e3e7;
-    border-radius: 5px 5px 0 0;
-    width: 100%; 
-    font-weight: bold;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 400px;
 }
 
-.tab-header {
-    cursor: pointer;
+.experience {
     width: 100%;
-    padding: 10px 0;
+    aspect-ratio: 3.5/4;
+}
+
+.image-container {
+    width: 20%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.tab-content {
-    height: 100%;
-    width: 60vw;
-    max-width: calc(960px - 60px);
+.content-container {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-.padding-t-b-10 {
+.title {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.company-info {
+    display: flex;
+    justify-content: space-between;
     padding: 10px 0;
+    width: 100%;
 }
 
-.margin-l-r-5 {
-    margin: 0 10px;
+.comp {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
 }
 
-.exper-conatiner {
-    height: 100%;
+.number {
+    width: 3em;
+    height: 3em;
+    color: white;
+    background-color: #606060;
+    font-size: 0.75em;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.p-relative {
+.company {
+    font-weight: 700;
+    text-decoration: underline;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.role {
+    font-weight: 600;
+}
+
+.period,
+.role,
+.duration {
+    display: flex;
+}
+
+.duration,
+.period {
+    font-style: italic;
+    font-size: 0.8em;
+    color: #606060;
+    font-weight: 600;
+}
+
+.number {
+    margin-bottom: 10px;
+    z-index: 2;
+}
+
+.company-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    background-color: #606060;
+    height: 2px;
+    width: 100%;
     position: relative;
+    z-index: 1;
+    top: calc(-1.7em - 2px);
 }
 
-.right {
-    padding-top: 30px;
+@media (min-width: 450px) and (max-width: 768px) {
+
+    .period,
+    .role,
+    .duration {
+        display: flex;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 449px) {
+
+    .company-info {
+        margin-left: 0;
+    }
+
+
+}
+
+@media (min-width: 0) and (max-width: 768px) {
+
+    .title {
+        justify-content: flex-start;
+    }
+
+    .experience-container {
+        height: max-content;
+    }
+
+    .image-container {
+        width: 100%;
+    }
+
+    .experience {
+        width: 40%;
+    }
+
+    .company-info {
+        height: unset;
+        flex-direction: column;
+        padding: 20px 0;
+        margin-left: 0;
+    }
+
+    .content-container {
+        width: 100%;
+    }
+
+    .comp {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .company-details {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .number {
+        margin-right: 20px;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .image-container {
+        display: none;
+    }
+
+    .experience-container {
+        background-image: url(https://raw.githubusercontent.com/phoenixSaket/saket-verma/gh-pages-2/src/assets/Experience.png);
+        background-size: 50%;
+        background-position-x: 100%;
+        background-position-y: 100%;
+        background-repeat: no-repeat;
+    }
+
 }

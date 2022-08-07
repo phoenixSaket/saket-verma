@@ -1,44 +1,28 @@
-<div class="experience-container mini-shadow">
-    <div class="tabs-container">
-        <div class="w-100" *ngFor="let tab of tabs">
-            <div class="tab-header" (click)="setActiveTab(tab.tabName)" [ngClass]="tab.isActive ? 'active-tab' : ''">
-                {{tab.tabName}}
-            </div>
-        </div>
+<div class="experience-container container">
+    <div class="image-container">
+        <img class="experience"
+            src="https://raw.githubusercontent.com/phoenixSaket/saket-verma/gh-pages-2/src/assets/Experience.png"
+            alt="Experience">
     </div>
-    <div class="tab-content d-flex" id="content-height" *ngIf="getCurrentTab()==='Skills'">
-        <!-- <div class="left d-flex flex-column justify-center align-center w-50">
-            <b>Hello there !</b><br>
-            I am a developer with mai focus on front-end technologies like Angular, React.<br>
-            I have personal intererts in Native app building, Adobe Photoshop, Adobe XD, Kustom Live Wallpaper
-            (KLWP).<br>
-            I alo have personal interest in Data Science terminologies like Artificial Intelligence, Big Data, etc.
-        </div> -->
-        <div class="right d-flex w-100">
-            <div class="d-flex w-100">
-                <div class="w-50 margin-l-r-5">
-                    <div class="w-100 padding-t-b-10" *ngFor="let skill of leftSkills">
-                        <app-progress-bar [name]="skill.skillName" [value]="skill.value" [maxvalue]="skill.maxValue">
-                        </app-progress-bar>
+    <div class="content-container">
+        <div class="title">Experience</div>
+        <div class="company-info">
+            <div class="comp" *ngFor="let exp of experience; let i = index;">
+                <!-- {{exp | json}} -->
+                <div class="number">{{i+1}}</div>
+                <div class="company-details">
+                    <div class="line"></div>
+                    <div class="company">{{exp.company}}</div>
+                    <div class="role">{{exp.role}}</div>
+                    <div class="period">
+                        <div class="start">{{getMonth(exp.period.start.month)}}, {{(exp.period.start.year).toString().substring(0, 2)}}</div>
+                        &nbsp;-&nbsp;
+                        <div class="end">{{getMonth(exp.period.end.month)}}{{exp.period.end.year != 0 ? ", " +
+                            exp.period.end.year.toString().substring(0, 2) : ""}}</div>
                     </div>
-                </div>
-                <div class="w-50 margin-l-r-5">
-                    <div class="w-100 padding-t-b-10" *ngFor="let skill of rightSkills">
-                        <app-progress-bar [name]="skill.skillName" [value]="skill.value" [maxvalue]="skill.maxValue">
-                        </app-progress-bar>
-                    </div>
+                    <div class="duration" [innerHTML]="getDuration(exp.period.start, exp.period.end)"></div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="tab-content p-relative" [style.height]="contentHeight + 'px'" *ngIf="getCurrentTab()==='Experience'">
-        <div class="w-100 exper-conatiner d-flex align-center">
-            <app-timeline [experience]="experience"></app-timeline>
-        </div>
-    </div>
-    <div class="tab-content" [style.height]="contentHeight + 'px'" *ngIf="getCurrentTab()==='Education'">
-        <div class="w-100 exper-conatiner d-flex align-center">
-            <app-vertical-timeline [education]="education"></app-vertical-timeline>
         </div>
     </div>
 </div>

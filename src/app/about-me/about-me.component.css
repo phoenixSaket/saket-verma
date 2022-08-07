@@ -1,76 +1,45 @@
 .about-me-container {
-    margin-top: -60px;
-    width: 60%;
-    max-width: 1440px;
-    /* background-color: #f2f2f2; */
-    background: transparent;
-    padding: 30px;
-    border-radius: 5px;
-}
-
-.about-me-inner {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    z-index: 2;
-
-}
-
-.para {
-    padding: 5px 0px;
-    text-align: justify;
-}
-
-.left-side {
-    /* width: 30%;
-    height: 100%; */
+    min-height: 350px;
+    max-height: max-content;
+    padding: 20px;
+    background-color: #d0f6ffc9;
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-right: 20px;
-
-    /* position: relative;
-    top: 0;
-    left: 0; */
-    /* background-color: #122777; */
-    /* background-color: #e9fdff; */
 }
 
-.right-side {
-    width: 70%;
+.standing-man {
+    right: 0;
+    width: 100%;
+    aspect-ratio: 2/3.7;
 }
 
-.signature-and-buttons {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-between;
+.content {
+    width: 100%;
     margin-top: 30px;
+    font-size: 1em;
+    line-height: 1.5em;
 }
 
-.buttons-container {
-    display: flex;
-}
-.margin-right-20 {
-    margin-right: 20px;
-}
-
-.sign {
-    height: 70px;
+.hello {
+    font-size: 1.3em;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
-.about-me-image {
-    width: 100%;
+.double-break {
+    margin-bottom: 15px;
 }
 
-.avatar {
-    width: 100%;
-}
+@media (min-width:0) and (max-width: 768px) {
+    .image-container {
+        display: none;
+    }
 
-.experience {
-    width: 150px;
-    height: 170px;
-    border-radius: 5px;
-    /* background-color: #ffffffab; */
+    .about-me-container {
+        background-image: url("https://raw.githubusercontent.com/phoenixSaket/saket-verma/gh-pages-2/src/assets/standing-man-1.png");
+        background-size: contain;
+        background-position-x: 100%;
+        background-position-y: 100%;
+        background-repeat: no-repeat;
+    }
 }

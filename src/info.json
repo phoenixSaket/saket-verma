@@ -1,10 +1,24 @@
 {
-    "name": "Saket Verma",
-    "jobProfile": "Developer",
-    "image": "saket.png",
-    "experienceImage": "2years.png",
-    "aboutText": "<b>Hello !</b><br><br> I am a web developer focused on crafting great web experiences. Designing and Coding have been my passion since the days I started working with computers.I enjoy creating beautifully designed, intuitive and functional websites, softwares, live wallpapers.<br> Besides this, I also have passion for gaming and mobile photography.",
-    "introText": "<b>Hello there !</b><br><br>I am a developer with main focus on front-end technologies like Angular, React.<br>I have personal intererts in Native app building, Adobe Photoshop, Adobe XD, Kustom Live Wallpaper (KLWP).<br>I alo have personal interest in Data Science terminologies like Artificial Intelligence, Big Data, etc.",
+    "personalInfo": {
+        "name": "Saket Verma",
+        "jobProfile": "Software Engineer",
+        "image": "saket.png",
+        "experienceImage": "2years.png",
+        "phone": "+918668692038",
+        "email": "develope.saket@gmail.com",
+        "socialLinks": {
+            "facebook": "https://www.facebook.com/iamsaket.verma",
+            "instagram": "https://www.instagram.com/saket.verma/",
+            "reddit": "https://www.reddit.com/user/phoenix_saket",
+            "twitter": "https://twitter.com/phoenix_saket",
+            "github": "https://github.com/phoenixSaket",
+            "linkedin": "https://www.linkedin.com/in/developer-saket-verma"
+        },
+        "resumeLink": ""
+    },
+    "aboutMe": {
+        "content": "<div class='hello'>Hello !</div><div class='double-break'>I am a web developer focused on crafting great web experiences. Designing and Coding have been my passion since the days I started working with computers.I enjoy creating beautifully designed, intuitive and functional websites, softwares, live wallpapers.</div><div class='double-break'>Besides this, I also have passion for gaming and mobile photography.</div><div class='double-break'>I am currently working as a Software Engineer on technologies like Angular, Ionic, Capacitor.I have personal interests in Adobe Photoshop, Adobe XD, Kustom Live Wallpaper (KLWP).I also have personal interest in Data Science terminologies like Artificial Intelligence, Big Data, etc. </div>"
+    },
     "skills": [
         {
             "name": "Angular",
@@ -50,6 +64,7 @@
     "experience": [
         {
             "company": "PlexusMD",
+            "role": "Intern Software Enginner",
             "period": {
                 "start": {
                     "month": 1,
@@ -63,6 +78,7 @@
         },
         {
             "company": "ScrollRight",
+            "role": "Software Enginner",
             "period": {
                 "start": {
                     "month": 7,
@@ -76,6 +92,7 @@
         },
         {
             "company": "CitiusTech",
+            "role": "Software Enginner",
             "period": {
                 "start": {
                     "month": 10,
@@ -91,24 +108,27 @@
     "education": [
         {
             "course": "MCA",
+            "courseFull": "Masters of Computer Applications",
             "period": {
                 "start": 2017,
                 "end": 2020
             },
-            "college": "Veermata Jijabai Technological Institue (VJTI)",
+            "college": "Veermata Jijabai Technological Institute (VJTI)",
             "city": "Mumbai"
         },
         {
             "course": "BCA",
+            "courseFull": "Bachelors of Computers Applications",
             "period": {
                 "start": 2014,
                 "end": 2017
             },
-            "college": "G. H. Raisoni Institute for I.T.",
+            "college": "G. H. Raisoni Institute for Information Technology",
             "city": "Nagpur"
         },
         {
             "course": "HSC",
+            "courseFull": "Higher School Certificate",
             "period": {
                 "start": null,
                 "end": 2014
@@ -118,6 +138,7 @@
         },
         {
             "course": "SSC",
+            "courseFull": "Secondory School Certificate",
             "period": {
                 "start": null,
                 "end": 2012
@@ -125,13 +146,5 @@
             "college": "Fatima Convent High School",
             "city": "Achalpur"
         }
-    ],
-    "socialLinks": {
-        "facebook": "https://www.facebook.com/iamsaket.verma",
-        "instagram": "https://www.instagram.com/saket.verma/",
-        "reddit": "https://www.reddit.com/user/phoenix_saket",
-        "twitter": "https://twitter.com/phoenix_saket",
-        "github": "https://github.com/phoenixSaket",
-        "linkedin": "https://www.linkedin.com/in/developer-saket-verma"
-    }
+    ]
 }

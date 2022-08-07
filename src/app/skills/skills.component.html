@@ -1,0 +1,12 @@
+<div class="skills-container container">
+    <div class="title">
+        Skills
+    </div>
+    <div class="skills">
+        <div class="skill" *ngFor="let skill of skills">
+            <div class="progress">
+                <app-progress [name]="skill.name" [value]="skill.percent" [max]="skill.max"></app-progress>
+            </div>
+        </div>
+    </div>
+</div>

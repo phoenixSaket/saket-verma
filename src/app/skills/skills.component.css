@@ -1,0 +1,10 @@
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.progress {
+    width: 300px;
+    padding: 10px;
+}
